@@ -25,7 +25,7 @@ const Curso = ({ curso }) => {
                 rgb(0 0 0 / 0.65),
                 rgb(0 0 0 / 0.7)
               ),
-              url(http://localhost:1337${imagen.url});
+              url(${process.env.API_URL}${imagen.url});
             background-size: cover;
             background-position: 50%;
           }

@@ -1,4 +1,4 @@
-import Link from "next/Link";
+import Link from "next/link";
 import Image from "next/image";
 import { formatearFecha } from "../helpers";
 import styles from "../styles/Entrada.module.css";
@@ -12,7 +12,7 @@ const Entrada = ({ entrada }) => {
         layout="responsive"
         width={800}
         height={600}
-        src={`http://localhost:1337${imagen.url}`}
+        src={`${process.env.API_URL}${imagen.url}`}
         alt={`imagen blog ${titulo}`}
       />
       <div className={styles.contenido}>

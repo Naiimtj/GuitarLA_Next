@@ -15,7 +15,7 @@ const EntradaBlog = ({ entrada }) => {
             layout="responsive"
             width={800}
             height={600}
-            src={`http://localhost:1337${imagen.url}`}
+            src={`${API_URL}${imagen.url}`}
             alt={`imagen entrada ${titulo}`}
           />
           <div className={styles.contenido}>

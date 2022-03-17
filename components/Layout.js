@@ -8,8 +8,6 @@ const Layout = ({ children, pagina, guitarra }) => {
       <Head>
         <title>GuitarLA - {pagina}</title>
         <meta name="description" content="Sitio Web de venta de guitarras" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       </Head>
       <Header guitarra={guitarra} />
       {children}

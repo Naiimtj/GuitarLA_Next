@@ -10,7 +10,7 @@ const Guitarra = ({ guitarra }) => {
         layout="responsive"
         width={180}
         height={350}
-        src={`http://localhost:1337${imagen.url}`}
+        src={`${process.env.API_URL}${imagen.url}`}
         alt={`Imagen Guitarra ${nombre}`}
       />
       <div className={styles.contenido}>

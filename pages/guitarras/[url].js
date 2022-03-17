@@ -17,7 +17,7 @@ const Producto = ({ guitarra, agregarCarrito }) => {
     //-Agregarlo al Carrito
     const guitarraSeleccionada = {
       id,
-      imagen: `http://localhost:1337${imagen.url}`,
+      imagen: `${API_URL}${imagen.url}`,
       nombre,
       precio,
       cantidad,
@@ -33,7 +33,7 @@ const Producto = ({ guitarra, agregarCarrito }) => {
           layout="responsive"
           width={180}
           height={350}
-          src={`http://localhost:1337${imagen.url}`}
+          src={`${API_URL}${imagen.url}`}
           alt={`Imagen Guitarra ${nombre}`}
         />
         <div className={styles.contenido}>
